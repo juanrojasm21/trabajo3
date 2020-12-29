@@ -1,0 +1,44 @@
+.user {
+  margin-top: 74px;
+}
+.user img {
+  padding-top: 50px;
+  max-height: 300px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit:contain;
+  margin-bottom: 1rem;
+}
+.user .user-info {
+  float: right;
+}
+.user .user-info .rating {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  background-color: rgb(101, 170, 101);
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+}
+.user .user-info .duration {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: rgb(101, 103, 170);
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  line-height: 30px;
+}
+
+.user ul.genres-list {
+  list-style: none;
+}
+.user ul.genres-list li {
+  float: left;
+  margin-right: 0.5rem;
+}

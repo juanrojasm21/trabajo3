@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import Users from './users/Users';
+import User from './user/User';
+import Header from './header/Header';
+import Footer from './footer/Footer'
+import Login from './login/Login';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+import { withRouter } from 'react-router';
+import { AppContext } from './lib/contextLib';
 
 function App() {
+
+  const [isAuthenticated, userHasAuthenticated] = useState(false);
+  const [location, setLocation] = useState("/users");
+
+  const ChangeTracker = withRouter(({location}) => {
+    setLocation(location.pathname);
+    return false;
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+        <Router>
+          <Header location={location} />
+          <Switch>
+            <Route path="/" exact>
+              <Redirect to="/users" />
+            </Route>
+            <Route path="/users" exact component={Users} />
+            <Route path="/login" exact component={Login} />
+            <Route path="/user/:id" exact component={User} />
+          </Switch>
+          <Footer />
+          <ChangeTracker />
+        </Router>
+      </AppContext.Provider>
+    </>
   );
 }
 

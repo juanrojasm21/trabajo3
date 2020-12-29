@@ -1,0 +1,17 @@
+[
+  { "id" : 1,
+    "doc_identidad" : 1045678567.0,
+    "nombre" : "Diana Fernanda Moreno",
+    "fecha_nacimiento" : "2000-06-12",
+    "sexo" : "mujer",
+    "alergias" : "rinitis",
+    "antecedentes" : "Problemas respiratorio"},
+  {
+      "id" : 2,
+      "doc_identidad" : 1289678900.0,
+      "nombre" : "Luis Gustavo",
+      "fecha_nacimiento" :"2000-04-15",
+      "sexo" : "hombre",
+      "alergias" : "ninguna",
+      "antecedentes" : "ninguna"}
+]

@@ -1,0 +1,44 @@
+[{
+    "id" : 2,
+    "doc_identidad" : 1289678900.0,
+    "image":"https://api.time.com/wp-content/uploads/2014/03/happily-surprised.jpg?w=600&quality=85",
+    "nombre" : "Luis Gustavo",
+    "fecha_nacimiento" :"2000-04-15",
+    "sexo" : "hombre",
+    "alergias" : "ninguna",
+    "antecedentes" : "ninguna",
+    "cita": {
+        "cod_cita" : "sdasd3242",
+        "descripcion_cita" : "cita de contról general",
+        "hora_fecha" : "2020-04-29",
+        "peso" : 70.5,
+        "estatura" : 1.75,
+        "presion_arterial" : "120/80",
+        "medico" : {
+            "doc_identidad" : 1023456789.0,
+            "nombre" : "Pepe fortuna",
+            "usuario" : "pepefortu",
+            "clave" : "123",
+            "especialidad" : "Neuro"
+        },
+        "medicamento": {
+            "cod_medicamento" : "sdhfjk456",
+            "nombre_medicamento" : "Loratadina",
+            "reg_invima" : "535345",
+            "fecha_vencimiento" : "2022-03-25",
+            "dosis" : 2.5,
+            "duracion_medicamento" : "4 dias",
+            "intervalo_dosis" : "6h"
+        },
+        "examenlaboratorio" : {
+            "codigo_examen" : "sde3234",
+            "nombre_examen" : "electrocardiograma",
+            "descripcion" : "examen de corazón",
+            "requisitos" : "ayunas",
+            "resultado" : "en buenas condiciones de forma y funcionamiento",
+            "imagen_resultado" : "sin imágen",
+            "fecha_resultado" : "2020-04-29",
+            "estado" : "activo"
+        }
+    }
+}]

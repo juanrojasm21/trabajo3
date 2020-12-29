@@ -7,7 +7,7 @@ import { useAppContext } from '../lib/contextLib';
 import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderPlus, faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
-import Users from '../users/Users';
+
 
 function UserSearcher() {
   

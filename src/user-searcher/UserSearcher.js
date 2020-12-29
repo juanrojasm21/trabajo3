@@ -15,16 +15,13 @@ function UserSearcher() {
   const { isAuthenticated } = useAppContext();
   const history = useHistory();
   const [users, setUsers] = useState(null);
-  const [usersComplete, setUsersComplete] = useState(null);
-  const [userFind, setUserFind] = useState(null);
-  const [userToFind, setUserToFind] = useState(null);
+
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(`json/users.json`);
         const usersJson = await response.json();
         setUsers(usersJson);
-        setUsersComplete(usersJson);
       } catch (e) {
         console.error(e);
       }
